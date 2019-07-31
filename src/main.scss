@@ -11,6 +11,10 @@
 	padding-left: 10px;
 }
 
+.btn {
+	border-radius: 11px;
+}
+
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 * {
 	box-sizing: border-box;
@@ -165,7 +169,8 @@ img {
  * 2. Remove the margin in Firefox and Safari.
  */
 
-form {
+.login-form,
+.register-form {
 	background-color: #fff;
 	max-width: 30em;
 	padding: 2em !important;

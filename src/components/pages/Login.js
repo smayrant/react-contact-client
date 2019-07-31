@@ -3,7 +3,7 @@ import React from "react";
 const Login = () => {
 	return (
 		<div className="row">
-			<form className="col s12">
+			<form className="login-form col s12">
 				<div className="row">
 					<div className="input-field col s12">
 						<input id="email" type="email" className="validate" />

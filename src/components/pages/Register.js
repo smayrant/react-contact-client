@@ -3,7 +3,7 @@ import React from "react";
 const Register = () => {
 	return (
 		<div className="main-container row">
-			<form className="col s12">
+			<form className="register-form col s12">
 				<div className="row">
 					<div className="input-field col s12">
 						<input id="name" type="text" className="validate" />
