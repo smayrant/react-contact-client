@@ -1,0 +1,23 @@
+nav {
+	background: blue;
+	color: #fff;
+
+	.nav-inner-container {
+		display: flex;
+		align-items: center;
+	}
+
+	.nav-link-container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.right-container {
+		margin-left: auto;
+	}
+
+	.nav-link {
+		list-style: none;
+		padding-left: 1.5em;
+	}
+}
