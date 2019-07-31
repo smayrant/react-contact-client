@@ -1,4 +1,7 @@
-@import './styles/layout/navbar';
+@import './styles/layout/_navbar';
+@import './styles/pages/_register';
+@import './styles/pages/_login';
+@import './styles/pages/_start';
 
 .container {
 	margin-right: auto;
@@ -34,6 +37,7 @@ html {
 
 body {
 	margin: 0;
+	background: #eeeded;
 }
 
 /**
@@ -160,6 +164,12 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
+
+form {
+	background-color: #fff;
+	max-width: 30em;
+	padding: 2em !important;
+}
 
 button,
 input,
