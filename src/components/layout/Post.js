@@ -25,6 +25,14 @@ const Post = () => {
 						</p>
 					</div>
 				</div>
+				<div className="like-container">
+					<div className="like-content">
+						<div className="like-icon">
+							<i class="fas fa-heart" />
+						</div>
+						<div className="like-count">0</div>
+					</div>
+				</div>
 			</div>
 			<hr className="post-break" />
 		</div>

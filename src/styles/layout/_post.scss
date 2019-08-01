@@ -19,3 +19,20 @@
 .post-content-container {
 	padding: 1em;
 }
+
+.like-container {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 1em;
+}
+.like-content {
+	display: flex;
+	border: 2px solid #ff2d34;
+	border-radius: 4px;
+	padding: .3em;
+	color: #ff2d34;
+}
+
+.like-count {
+	margin-left: .3em;
+}
