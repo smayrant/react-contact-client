@@ -1,6 +1,7 @@
 import React, { Fragment } from "react";
 import Navbar from "../layout/Navbar";
 import Post from "../layout/Post";
+import Footer from "../layout/Footer";
 
 const Start = () => {
 	return (
@@ -13,8 +14,10 @@ const Start = () => {
 					</div>
 					<div class="row">
 						<form class="s">
-							<div class="row">
-								<div class="col s1 create-post-avatar">IMG</div>
+							<div class="row avatar-input-container">
+								<div class="col s1 create-post-avatar">
+									<i class="fas fa-user" />
+								</div>
 								<div class="input-field col s11">
 									<textarea id="textarea1" class="materialize-textarea" />
 									<label for="textarea1">Say something...</label>
@@ -22,13 +25,16 @@ const Start = () => {
 							</div>
 						</form>
 					</div>
-					<button class="waves-effect waves-light btn">
-						<i class="fas fa-edit" /> Create a new post!
-					</button>
+					<div className="create-post-btn-container">
+						<button class="create-post-btn waves-effect waves-light btn">
+							<i class="fas fa-edit" /> Create a new post!
+						</button>
+					</div>
 				</div>
-				<hr />
+				<hr className="post-break" />
 				<Post />
 			</div>
+			<Footer />
 		</Fragment>
 	);
 };
