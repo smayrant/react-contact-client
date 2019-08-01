@@ -8,14 +8,14 @@ const Start = () => {
 		<Fragment>
 			<Navbar />
 			<div className="container">
-				<div className="white z-depth-1 create-post-container">
-					<div className="create-post-heading">
-						<h6 className="create-post-title">Create Post</h6>
+				<div className="white z-depth-1 create-post-container post-container">
+					<div className="post-heading">
+						<h6 className="post-title">Create Post</h6>
 					</div>
 					<div class="row">
 						<form class="s">
 							<div class="row avatar-input-container">
-								<div class="col s1 create-post-avatar">
+								<div class="col s1 post-avatar">
 									<i class="fas fa-user" />
 								</div>
 								<div class="input-field col s11">
@@ -31,7 +31,7 @@ const Start = () => {
 						</button>
 					</div>
 				</div>
-				<hr className="post-break" />
+
 				<Post />
 			</div>
 			<Footer />

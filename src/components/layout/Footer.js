@@ -5,7 +5,10 @@ const Footer = () => {
 		<div>
 			<footer className="z-depth-1">
 				<div className="container">
-					<p className="footer-content">SayWhat?! &copy; 2019. Code and design by Sheldrick Mayrant</p>
+					<p className="footer-content">
+						<span className="footer-span">SayWhat?!</span> &copy; 2019. Code and design by{" "}
+						<span className="footer-span">Sheldrick Mayrant</span>
+					</p>
 				</div>
 			</footer>
 		</div>

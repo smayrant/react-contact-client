@@ -1,0 +1,21 @@
+.new-post-heading {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 0;
+}
+
+.post-info {
+	color: #fff;
+	margin-left: 1em;
+}
+
+.post-user-name,
+.post-date,
+.new-post-avatar {
+	margin: 0;
+}
+
+.post-content-container {
+	padding: 1em;
+}
