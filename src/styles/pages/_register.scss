@@ -1,1 +1,15 @@
+@import '../variables';
 
+.register-form {
+	padding: 0 2em;
+}
+
+.form-name-logo {
+	text-align: center;
+	color: $main-color;
+}
+
+.login-register-btn {
+	background-color: $main-color;
+	width: 100%;
+}

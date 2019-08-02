@@ -5,6 +5,7 @@ const Login = () => {
 		<div className="row">
 			<div className="form-container">
 				<form className="login-form col s12">
+					<h1 className="form-name-logo">SayWhat?!</h1>
 					<div className="row">
 						<div className="input-field col s12">
 							<input id="email" type="email" className="validate" />
@@ -17,7 +18,7 @@ const Login = () => {
 							<label for="password">Password</label>
 						</div>
 					</div>
-					<button class="waves-effect waves-light btn">Login</button>
+					<button class="login-register-btn waves-effect waves-light btn">Login</button>
 				</form>
 			</div>
 		</div>

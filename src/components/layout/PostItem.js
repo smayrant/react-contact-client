@@ -1,6 +1,6 @@
 import React from "react";
 
-const Post = () => {
+const PostItem = ({ post }) => {
 	return (
 		<div>
 			<div className="white z-depth-1 new-post-container post-container">
@@ -9,26 +9,22 @@ const Post = () => {
 						<i className="fas fa-user" />
 					</div>
 					<div className="post-info">
-						<h5 className="post-user-name">Rick</h5>
-						<p className="post-date">August 1, 2019</p>
+						<h5 className="post-user-name">{post.username}</h5>
+						<p className="post-date">{post.date}</p>
 					</div>
 				</div>
 				<div className="post-content-container">
 					<div className="post-content-title">
-						<h5>post title</h5>
+						<h5>{post.title}</h5>
 					</div>
 					<div className="post-content">
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestiae, laborum atque
-							commodi corporis perferendis, sapiente, reiciendis mollitia consequatur repellendus
-							laudantium repellat rem accusantium dolorum illum alias veritatis nobis dignissimos.
-						</p>
+						<p>{post.content}</p>
 					</div>
 				</div>
 				<div className="like-container">
 					<div className="like-content">
 						<div className="like-icon">
-							<i class="fas fa-heart" />
+							<i className="fas fa-heart" />
 						</div>
 						<div className="like-count">0</div>
 					</div>
@@ -39,4 +35,4 @@ const Post = () => {
 	);
 };
 
-export default Post;
+export default PostItem;

@@ -5,7 +5,7 @@ const Register = () => {
 		<div className="main-container row">
 			<div className="form-container">
 				<form className="register-form col s12">
-					<h1>SayWhat?!</h1>
+					<h1 className="form-name-logo">SayWhat?!</h1>
 					<div className="row">
 						<div className="input-field col s12">
 							<input id="name" type="text" className="validate" />
@@ -25,7 +25,7 @@ const Register = () => {
 							<label for="password">Password</label>
 						</div>
 					</div>
-					<button class="waves-effect waves-light btn">Register</button>
+					<button class="login-register-btn waves-effect waves-light btn">Register</button>
 				</form>
 			</div>
 		</div>
