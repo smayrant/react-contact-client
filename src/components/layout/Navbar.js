@@ -6,7 +6,7 @@ const Navbar = () => {
 		<nav>
 			<div className="nav-wrapper container">
 				<Link className="logo" to="/">
-					SayWhat?!
+					React Contact
 				</Link>
 				<ul id="nav-mobile" className="right hide-on-med-and-down">
 					<li>

@@ -1,46 +1,27 @@
-import React, { Fragment, Component } from "react";
+import React, { Component } from "react";
 import Navbar from "../layout/Navbar";
 import Posts from "../layout/Posts";
-import PostForm from "../layout/PostForm";
+import PostContextProvider from "../../contexts/PostContext";
 // import Footer from "../layout/Footer";
 
 class Start extends Component {
-	state = {
-		posts: [
-			{
-				id: 1,
-				username: "rick",
-				date: "aug 2",
-				postTitle: "new post",
-				content: "this is the content for the post"
-			},
-			{
-				id: 2,
-				username: "jon",
-				date: "aug 2",
-				postTitle: "john's new post",
-				content: "this is the content for jon's post"
-			},
-			{
-				id: 3,
-				username: "dan",
-				date: "aug 2",
-				postTitle: "dan's new post",
-				content: "this is the content for dan's post"
-			}
-		]
+	addPost = ({ post }) => {
+		this.setState({
+			posts: [
+				...this.state.posts,
+				{ id: post.id, username: post.username, postTitle: post.postTitle, content: post.content }
+			]
+		});
 	};
 
 	render () {
 		return (
-			<Fragment>
+			<PostContextProvider>
 				<Navbar />
 				<div className="container">
-					<PostForm />
-
-					<Posts posts={this.state.posts} />
+					<Posts />
 				</div>
-			</Fragment>
+			</PostContextProvider>
 		);
 	}
 }

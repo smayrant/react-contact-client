@@ -5,7 +5,7 @@ const Login = () => {
 		<div className="row">
 			<div className="form-container">
 				<form className="login-form col s12">
-					<h1 className="form-name-logo">SayWhat?!</h1>
+					<h1 className="form-name-logo">React Contact</h1>
 					<div className="row">
 						<div className="input-field col s12">
 							<input id="email" type="email" className="validate" />
